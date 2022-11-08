@@ -11,7 +11,7 @@ function validar() {
     alert('[ERROR] El campo "Nombre" debe de estar relleno');
     return false;
   }
-  //validar Dirección
+  //validar Dirección.
   if (direccion.value.trim() == "") {
     alert('[ERROR] El campo "Dirección" debe de estar relleno');
     return false;
