@@ -1,4 +1,4 @@
-const URL_DESTINO = "http://localhost:5500/AE-2. AJAX/";
+const URL_DESTINO = "http://localhost:5500/AE-2. AJAX_dificil/";
 const RECURSO1 = "tamaños_e_ingredientes.json";
 
 function enviarPeticionAsincrona() {
