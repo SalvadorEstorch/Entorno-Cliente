@@ -6,7 +6,7 @@ function enviarPeticionCargaDatos() {
   xmlHttp.onreadystatechange = function () {
     if (this.readyState == 4) {
       if (this.status == 200) {
-        procesarRespuesta(this.responseText); //Obtenemos el valor en texto
+        procesarRespuestaCargaDatos(this.responseText); //Obtenemos el valor en texto
       } else {
         alert("¡ZASCA!");
       }
