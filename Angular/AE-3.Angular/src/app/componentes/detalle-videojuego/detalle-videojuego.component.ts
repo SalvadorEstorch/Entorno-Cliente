@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Videojuego } from 'src/app/entidades/videojuego';
 
 @Component({
-  selector: 'app-detalle-videojuego',
+  selector: 'detalle-videojuego',
   templateUrl: './detalle-videojuego.component.html',
-  styleUrls: ['./detalle-videojuego.component.css']
+  styleUrls: ['./detalle-videojuego.component.css'],
 })
 export class DetalleVideojuegoComponent implements OnInit {
+  id: number = 0;
+  titulo: string = '';
+  compania: string = '';
+  valoracion: number = 0;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(route: ActivatedRoute) {
+    this.id = route.snapshot.params['id'];
+    this.titulo = route.snapshot.params['titulo'];
+    this.compania = route.snapshot.params['compania'];
+    this.valoracion = route.snapshot.params['valoracion'];
   }
 
+  ngOnInit(): void {}
 }

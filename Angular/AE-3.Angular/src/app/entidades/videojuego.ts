@@ -1,4 +1,4 @@
-export class videojuego {
+export class Videojuego {
   //Es un atributo privado
   private _id: number = 0;
 
@@ -6,12 +6,12 @@ export class videojuego {
   constructor(
     _id: number,
     public titulo: string,
-    public compañia: string,
-    public valoracion: string
+    public compania: string,
+    public valoracion: number
   ) {
     this._id = _id;
     this.titulo = titulo;
-    this.compañia = compañia;
+    this.compania = compania;
     this.valoracion = valoracion;
   }
 
@@ -21,6 +21,6 @@ export class videojuego {
   }
 
   public toString(): string {
-    return `Identificador: ${this._id}, Título: ${this.titulo}, Compañía: ${this.compañia}, Valoración: ${this.valoracion}`;
+    return `Identificador: ${this._id}, Título: ${this.titulo}, Compañía: ${this.compania}, Valoración: ${this.valoracion}`;
   }
 }
