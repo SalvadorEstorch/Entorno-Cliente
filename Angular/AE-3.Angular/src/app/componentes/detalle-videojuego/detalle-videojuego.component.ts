@@ -11,12 +11,14 @@ export class DetalleVideojuegoComponent implements OnInit {
   id: number = 0;
   titulo: string = '';
   compania: string = '';
+  imagen: string = '';
   valoracion: number = 0;
 
   constructor(route: ActivatedRoute) {
     this.id = route.snapshot.params['id'];
     this.titulo = route.snapshot.params['titulo'];
     this.compania = route.snapshot.params['compania'];
+    this.imagen = route.snapshot.params['imagen'];
     this.valoracion = route.snapshot.params['valoracion'];
   }
 

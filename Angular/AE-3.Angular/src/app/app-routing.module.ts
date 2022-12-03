@@ -9,8 +9,12 @@ const routes: Routes = [
     component: ListadoVideojuegosComponent,
   },
   {
-    path: 'videojuego/:id/:titulo/:compania/:valoracion',
+    path: 'videojuego/:id/:titulo/:compania/:imagen/:valoracion',
     component: DetalleVideojuegoComponent,
+  },
+  {
+    path: 'listado',
+    component: ListadoVideojuegosComponent,
   },
 ];
 

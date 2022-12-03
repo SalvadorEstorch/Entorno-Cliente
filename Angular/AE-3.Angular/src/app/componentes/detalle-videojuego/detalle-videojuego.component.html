@@ -1,5 +1,14 @@
-<p>detalle-videojuego works!</p>
-<h1>{{id}}</h1>
-<h1>{{titulo}}</h1>
-<h1>{{compania}}</h1>
-<h1>{{valoracion}}</h1>
+<link rel="detalle-videojuego" type="text/css"
+    href="/AE-3.Angular/src/app/componentes/detalle-videojuego/detalle-videojuego.css" />
+<link rel="detalle-videojuego.css">
+<div class="detalles">
+    <img src="{{imagen}}">
+    <div class="datos">
+        <h2>Detalles del juego:</h2>
+        <p>Identificador: {{id}}</p>
+        <p>Título: {{titulo}}</p>
+        <p>Compañía: {{compania}}</p>
+        <p>Valoración: {{valoracion}}</p>
+    </div>
+</div>
+<button routerLink="/listado">Atrás</button>
