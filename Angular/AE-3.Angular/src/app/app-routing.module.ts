@@ -1,11 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { DetalleVideojuegoComponent } from './componentes/detalle-videojuego/detalle-videojuego.component';
 import { ListadoVideojuegosComponent } from './componentes/listado-videojuegos/listado-videojuegos.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { SobreNosotrosComponent } from './componentes/sobre-nosotros/sobre-nosotros.component';
 
+//Aquí temos que definir todas las posibles rutas que pueda usar nuestra web luego
+//para mostrar en <router-outlet></router-outlet> el componente que corresponda
 const routes: Routes = [
   {
-    path: '', //cuando definimos el 'path' no puede empezar por '/'
+    //Esta primera que está en '' será la página por defecto
+    path: '' || 'log-out', //cuando definimos el 'path' no puede empezar por '/'
+    component: LoginComponent,
+  },
+  {
+    path: 'listado',
     component: ListadoVideojuegosComponent,
   },
   {
@@ -13,8 +23,12 @@ const routes: Routes = [
     component: DetalleVideojuegoComponent,
   },
   {
-    path: 'listado',
-    component: ListadoVideojuegosComponent,
+    path: 'contacto',
+    component: ContactoComponent,
+  },
+  {
+    path: 'sobre-nosotros',
+    component: SobreNosotrosComponent,
   },
 ];
 

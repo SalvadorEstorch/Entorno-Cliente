@@ -37,3 +37,6 @@ img {
   order: 1;
   flex-grow: 0;
 }
+button {
+  margin-left: 75px;
+}

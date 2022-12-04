@@ -1,6 +1,6 @@
-<link rel="detalle-videojuego" type="text/css"
-    href="/AE-3.Angular/src/app/componentes/detalle-videojuego/detalle-videojuego.css" />
-<link rel="detalle-videojuego.css">
+<!--Muestro la barra de menú-->
+<menu></menu>
+<!--Muestro la imange y los atributos que hay en el ts usando dobles llaves-->
 <div class="detalles">
     <img src="{{imagen}}">
     <div class="datos">
@@ -11,4 +11,9 @@
         <p>Valoración: {{valoracion}}</p>
     </div>
 </div>
+<!--Este botón te devuelve a la página anterior, pero usando routerLink, no href. 
+Lo que queremos es que nuestra página sea SPA, y si usamos href estaríamos moviendonos a
+una nueva página.
+En cambio con routerLink lo que hacemos es incluir este componente dentro de la etiqueta 
+<router-outlet></router-outlet> del app.component.html-->
 <button routerLink="/listado">Atrás</button>
